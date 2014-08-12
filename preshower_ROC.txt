@@ -1,7 +1,7 @@
 Siamo qui:
 cd root
 source setter_root.sh
-cd ~/root/Preshower_study/aidan_preshower
+cd ~/root/Preshower_study/
 
 
 Fare gli istogrammi e salvari nel .root (quelli con "_aidan" sono gli originali)
