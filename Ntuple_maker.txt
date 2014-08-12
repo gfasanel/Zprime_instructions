@@ -1,0 +1,55 @@
+Lo voglio far funzionare dalle M machines
+
+Entra in CMSSW--/src/
+git init
+git clone git@github.com:iihe-cms-sw/IIHETree.git UserCode/IIHETree
+cd UserCode/IIHETree
+scram b
+cd -
+cp UserCode/IIHETree/test/IIHE.py .
+(in src)
+
+Mo se ti vuoi fare il tuo modulo:
+cp UserCode/IIHETree/interface/IIHEModuleExample.h UserCode/IIHETree/interface/IIHEModuleTest.h
+cp UserCode/IIHETree/src/IIHEModuleExample.cc UserCode/IIHETree/src/IIHEModuleTest.cc
+
+
+così funziona GIT sulle M machines (senza https dalle M machines non funziona):
+git clone https://github.com/gfasanel/PythonGitHub.git test_git
+fai un file e poi
+git add test_add.txt 
+git commit -m "test adding"
+git push (e di default fa push nel branch master della repository remota)
+E ti chiede username (gfasanel) e password (Kruger_Guru1)
+
+
+Common Ntuple Maker
+
+Fai il tuo modulo di analisi, se vuoi
+
+Questo setta crab3, se vuoi
+source /cvmfs/cms.cern.ch/crab3/crab.sh
+crab submit
+(prenda la lista dei file da crabConfig.py e a ogni giro devi cambiare il nome della cartella di output)
+
+Per monitorare lo stato dei job
+crab status
+oppure
+http://glidemon.web.cern.ch/glidemon/users.php?type=crab3
+
+OPPURE puoi fare cmsRun IIHE.py
+
+GRID pass phrase: Kruger_Guru3
+
+
+
+A questo punto aspetti che i job abbiano finito; A cose fatte:
+Per scaricare l'output in locale =>
+crab getoutput
+
+
+
+Mi raccomando:
+crabConfig.py e anche IIHE.py devono essere in CMSSW/7..../src
+
+

@@ -1,0 +1,25 @@
+Siamo qui:
+cd root
+source setter_root.sh
+cd ~/root/Preshower_study/aidan_preshower
+
+
+Fare gli istogrammi e salvari nel .root (quelli con "_aidan" sono gli originali)
+
+python preshower_singleElectron_IIHEAnalysis.py 
+(=> e tutti gli istogrammi vengono salvati in histograms.root) 
+
+python roc_maker.py
+(=> roc in slice di ET Z' vs  QCD e Zprime vs DrellYan)
+
+pyrhon roc_maker_2.py
+(=> roc in slide di ET Zprime vs QCD e DY vs QCD)
+
+python combine_histograms.py
+(=> disegna Zprime, DY e tt variabile per variabile, normalizzata a 1)
+source publisher.sh
+
+
+
+
+

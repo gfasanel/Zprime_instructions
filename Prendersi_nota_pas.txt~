@@ -1,0 +1,41 @@
+https://twiki.cern.ch/twiki/bin/view/Sandbox/LiviaSoffiSandbox
+
+
+=========AN=================
+
+cd /afs/cern.ch/user/g/gfasanel/CERN_documents/svnrepo/
+svn update notes/AN-14-006
+eval `./notes/tdr runtime -sh`
+cd notes/AN-14-006/trunk
+tdr --style=an b AN-14-006
+cp ../../tmp/AN-14-006_temp.pdf ~/scratch1/www/
+
+(l'ultima istruzione compila e produce il .pdf)
+
+==========PAS============
+
+=========RAPIDO============
+cd /afs/cern.ch/user/g/gfasanel/CERN_documents/svnrepo/
+svn update notes/B2G-14-003
+eval `./notes/tdr runtime -sh`
+cd notes/B2G-14-003/trunk
+tdr --style=an b B2G-14-003
+cp ../../tmp/B2G-14-003_temp.pdf ~/scratch1/www/
+
+===SPIEGATO===============
+cd /afs/cern.ch/user/g/gfasanel/CERN_documents/svnrepo/
+svn update notes/B2G-14-003
+eval `./notes/tdr runtime -sh`
+cd notes/B2G-14-003/trunk
+(A questo livello si modifica il .tex)thr
+(Con l'istruzione successiva si compila)
+tdr --style=an b B2G-14-003
+cp ../../tmp/B2G-14-003_temp.pdf ~/scratch1/www/
+
+Da questo livello: notes/B2G-14-003/trunk 
+svn commit -m "fixing TT and tth symbols"
+NOTA: Se aggiungi un plot che prima non c'era, 
+devi fare svn add nome file
+
+Praticamente, la categorizzazione in notes e papers dipende dal caso.
+prova con notes/ se non funziona è papers/ e viceversa

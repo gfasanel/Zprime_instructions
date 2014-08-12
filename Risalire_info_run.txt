@@ -1,0 +1,5 @@
+[12:01:20] Aidan Randle-Conde: https://cmswbm.web.cern.ch/cmswbm/
+[12:01:29] Aidan Randle-Conde: Click on "RunSummary" (centre column)
+[12:01:38] Aidan Randle-Conde: Run 207515
+[12:01:59] Aidan Randle-Conde: Then click on "DQM GUI Offline" to bring up the page of plots
+

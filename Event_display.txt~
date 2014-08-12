@@ -1,0 +1,36 @@
+Dalla CMSDAS
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolPreExerciseSecondSet#Exercise_10_Fireworks_CMS_Event
+
+
+Mi scarico il file sulla Scrivania:
+scp gfasanel@lxplus5.cern.ch:/afs/cern.ch/cms/Tutorials/TWIKI_DATA/CMSDataAnaSch_RelValZMM536.root Scrivania/Zprime/
+
+cmsShow /afs/cern.ch/cms/Tutorials/TWIKI_DATA/CMSDataAnaSch_Data_536.root
+
+
+HO MESSO IL .ROOT SKIMMATO DA AIDAN SUL MIO DESKTOP
+
+cd ~/cmsShow-5.2-3
+./cmsShow CollisionData.root (non utile)
+./cmsShow outfile_1_1_aTT.root
+
+
+Questi sono eventi di double electron dati e Aidan li ha skimmati 
+Sono eventi con elettroni che passano il trigger ma non hanno elettroni ricostruiti
+
+=> Event Filters
+Mettere HLT giusto
+
+Voglio guardare eventi che NON hanno 2 offline gsf, quindi chiedo:
+Electrons@size()<2
+size()==2
+
+STRATEGIA:
+Vista nel piano trasverso
+Vista Longitudinale
+Tavola Elettroni
+Tavola Tracce
+Tavola fotoni
+
+$Electrons@.size()==2
+
